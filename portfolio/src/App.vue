@@ -1,17 +1,27 @@
 <template>
-  <img alt="MD logo" src="./assets/logo.png" />
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+  <div class="site">
+    <Header />
+    <Main />
+    <Footer />
+    <Main />
+  </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/macro/Header.vue";
+import Main from "./components/macro/Main.vue";
+import Footer from "./components/macro/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    // HelloWorld,
+    Header,
+    Main,
+    Footer,
   },
 };
 </script>
 
-<style></style>
+<style lang="scss">
+@import "./assets/style/main.scss";
+</style>
