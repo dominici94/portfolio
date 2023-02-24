@@ -1,0 +1,20 @@
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    width: 60px;
+  }
+
+  &__title {
+    margin-right: auto;
+    color: $color-primary-darker;
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+}
