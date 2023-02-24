@@ -1,20 +1,72 @@
 .header {
-  height: 100px;
+  height: $header-height;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid $color-grey-light-1;
+  margin-bottom: 2rem;
+  box-shadow: $shadow;
 
   &__logo {
-    width: 60px;
+    height: 8rem;
+    animation: moveInRight 1s ease-in;
   }
 
-  &__title {
-    margin-right: auto;
-    color: $color-primary-darker;
+  &__heading {
+    background-image: linear-gradient(
+      to bottom,
+      $color-primary-darker,
+      $color-primary-lighter
+    );
+    background-clip: text;
+    color: transparent;
+    font-family: $font-heading;
+
+    animation: moveInLeft 1s ease-out;
+    &--main {
+      margin-left: 1rem;
+      letter-spacing: 1.8px;
+      font-size: 4rem;
+      font-weight: 400;
+
+      text-shadow: 1px 2px 4px rgba($color-primary-light, $alpha: 0.7);
+    }
+
+    &--sub {
+      margin-left: 2rem;
+      letter-spacing: 1.2px;
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px rgba($color-primary-light, $alpha: 0.6);
+    }
   }
 
   &__nav {
+    height: 100%;
+    font-size: 2rem;
+    margin-left: auto;
     list-style: none;
     display: flex;
-    gap: 20px;
+  }
+
+  &__nav--item {
+    height: 100%;
+    padding: 0 1.5rem;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &__nav--link:link,
+  &__nav--link:visited {
+    display: inline-block;
+    height: 100%;
+    line-height: $header-height;
+    text-decoration: none;
+    color: currentColor;
   }
 }

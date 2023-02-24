@@ -1,5 +1,30 @@
+// COLORS
+
 $color-primary-lighter: #74c0fc;
 $color-primary-light: #4dabf7;
 $color-primary: #339af0;
 $color-primary-dark: #228be6;
 $color-primary-darker: #1c7ed6;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #999;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// FONT
+
+$default-font-size: 1.6rem;
+$font-heading: "Roboto Slab", serif;
+
+//SHADOW
+
+$shadow: 0 0 2rem rgba($color-primary-dark, 0.3);
+
+// SIZE
+
+$header-height: 10rem;

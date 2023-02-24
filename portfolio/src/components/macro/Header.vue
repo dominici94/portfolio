@@ -4,12 +4,24 @@
       ><img src="../../assets/img/logo.png" alt="logo" class="header__logo"
     /></a>
 
-    <h1 class="header__title">Mattia Dominici</h1>
+    <div class="header__heading">
+      <h1 class="header__heading--main">Mattia Dominici</h1>
+      <h2 class="header__heading--sub">web developer</h2>
+    </div>
+
     <ul class="header__nav">
-      <li class="header__nav--item">About me</li>
-      <li class="header__nav--item">Experience/Skills</li>
-      <li class="header__nav--item">Works/Projects</li>
-      <li class="header__nav--item">Contact</li>
+      <li class="header__nav--item">
+        <a class="header__nav--link" href="#">About me</a>
+      </li>
+      <li class="header__nav--item">
+        <a class="header__nav--link" href="#">Experience/Skills</a>
+      </li>
+      <li class="header__nav--item">
+        <a class="header__nav--link" href="#">Works/Projects</a>
+      </li>
+      <li class="header__nav--item">
+        <a class="header__nav--link" href="#">Contact</a>
+      </li>
     </ul>
   </header>
 </template>
