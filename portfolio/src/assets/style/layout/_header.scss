@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid $color-grey-light-1;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   box-shadow: $shadow;
 
   &__logo {
@@ -13,9 +13,9 @@
 
   &__heading {
     background-image: linear-gradient(
-      to bottom,
+      to right,
       $color-primary-darker,
-      $color-primary-lighter
+      $color-primary
     );
     background-clip: text;
     color: transparent;
