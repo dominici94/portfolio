@@ -6,21 +6,21 @@
 
     <div class="header__heading">
       <h1 class="header__heading--main">Mattia Dominici</h1>
-      <h2 class="header__heading--sub">web developer</h2>
+      <h2 class="header__heading--sub">front-end developer</h2>
     </div>
 
     <ul class="header__nav">
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">About me</a>
+        <a class="header__nav--link" href="#">Informazioni</a>
       </li>
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">Experience/Skills</a>
+        <a class="header__nav--link" href="#">Esperienze</a>
       </li>
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">Works/Projects</a>
+        <a class="header__nav--link" href="#">Progetti</a>
       </li>
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">Contact</a>
+        <a class="header__nav--link" href="#">Contatti</a>
       </li>
     </ul>
   </header>
@@ -31,5 +31,3 @@ export default {
   name: "Header",
 };
 </script>
-
-<style></style>

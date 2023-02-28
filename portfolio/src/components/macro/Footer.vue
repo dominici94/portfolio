@@ -1,5 +1,5 @@
 <template>
-  <h2 class="footer">Questo è il footer</h2>
+  <h2 class="footer">footer</h2>
 </template>
 
 <script>

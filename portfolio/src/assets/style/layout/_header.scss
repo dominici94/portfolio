@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid $color-grey-light-1;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   box-shadow: $shadow;
 
   &__logo {
@@ -51,6 +51,8 @@
 
   &__nav--item {
     height: 100%;
+    display: flex;
+    align-items: center;
     padding: 0 1.5rem;
     transition: all 0.3s;
 
@@ -63,8 +65,6 @@
 
   &__nav--link:link,
   &__nav--link:visited {
-    display: inline-block;
-    height: 100%;
     line-height: $header-height;
     text-decoration: none;
     color: currentColor;
