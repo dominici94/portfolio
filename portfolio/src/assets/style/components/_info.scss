@@ -1,0 +1,39 @@
+.about {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+
+  &__title {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-darker,
+      $color-primary-lighter
+    );
+    background-clip: text;
+    color: transparent;
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  &__image-container {
+    flex: 1 0 20rem;
+    height: 20rem;
+    overflow: hidden;
+    border: 0.5rem solid $color-primary-light;
+    border-radius: 50%;
+    box-shadow: $shadow-black;
+
+    animation: moveInBottom 0.5s ease-in;
+  }
+
+  &__image-picture {
+    width: 100%;
+  }
+}

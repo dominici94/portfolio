@@ -1,8 +1,8 @@
 <template>
   <section class="info">
     <div class="container">
-      <div class="row">
-        <div class="about">
+      <div class="about">
+        <div class="about__info">
           <h3 class="about__title">Informazioni</h3>
           <p class="about__text">
             Sono un junior front end developer con passione per la creazione di
@@ -20,9 +20,9 @@
             dei progetti in cui lavoro.
           </p>
         </div>
-        <figure class="img-container">
+        <figure class="about__image-container">
           <img
-            class="img-photo"
+            class="about__image-picture"
             src="../../assets/img/profilo.jpg"
             alt="profile picture"
           />

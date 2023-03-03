@@ -1,11 +1,11 @@
 <template>
   <section class="experiences">
-    <h3>Le mie esperienze</h3>
+    <h3 class="experiences__title">Le mie esperienze</h3>
     <ul class="experiences__list">
       <li class="experiences__card">
-        <h3>Ventis</h3>
-        <h4>Front end developer</h4>
-        <p>
+        <h3 class="experiences__society">Ventis</h3>
+        <h4 class="experiences__role">Front end developer</h4>
+        <p class="experiences__desc">
           Ho svolto sei mesi in Ventis, un e-commerce internazionale in cui ho
           avuto modo di apprendere i metodi principali di lavoro, come
           assegnazione dei task tramite jira, collaborazione con i team di
@@ -18,9 +18,9 @@
       </li>
 
       <li class="experiences__card">
-        <h3>Boolean Career's</h3>
-        <h4>Bootcamp full stack developer</h4>
-        <p>
+        <h3 class="experiences__society">Boolean Career's</h3>
+        <h4 class="experiences__role">Bootcamp full stack developer</h4>
+        <p class="experiences__desc">
           Corso intensivo full-time di sei mesi per la formazione della figura
           di sviluppatore full stack consistente di oltre 700 ore di corso,
           strutturato in spiegazione della teoria in mattinata e applicazione
