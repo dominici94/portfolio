@@ -29,13 +29,14 @@
         </figure>
       </div>
 
+      <h3 style="text-align: center">skills</h3>
       <carousel :items-to-show="5" :wrapAround="true" :autoplay="2500">
         <slide
           v-for="slide in dataSlider"
           :key="slide"
           style="display: flex; flex-direction: column"
         >
-          <figure style="width: 150px; height: 150px">
+          <figure style="width: 10rem; height: 10rem">
             <img :src="slide.imgUrl" :alt="slide.title" style="width: 100%" />
           </figure>
           <h3>{{ slide.title }}</h3>
@@ -70,13 +71,14 @@ export default {
           title: "Javascript",
           imgUrl: require("../../assets/img/js.png"),
         },
-        {
-          title: "Vue.js",
-          imgUrl: require("../../assets/img/vuejs.png"),
-        },
+
         {
           title: "Jquery",
           imgUrl: require("../../assets/img/jquery.png"),
+        },
+        {
+          title: "Vue.js",
+          imgUrl: require("../../assets/img/vuejs.png"),
         },
         {
           title: "Bootstrap",
@@ -85,6 +87,14 @@ export default {
         {
           title: "Git",
           imgUrl: require("../../assets/img/git.png"),
+        },
+        {
+          title: "Php",
+          imgUrl: require("../../assets/img/php.png"),
+        },
+        {
+          title: "Laravel",
+          imgUrl: require("../../assets/img/laravel.png"),
         },
       ],
     };

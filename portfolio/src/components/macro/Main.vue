@@ -1,7 +1,7 @@
 <template>
   <main class="main">
-    <!-- <img src="../../assets/img/img-profilo.jpg" alt="" /> -->
     <Info />
+    <Experiences />
     <!-- <h2 class="progetti">Progetti</h2>
     <div class="progetti"></div> -->
     <!-- <ul>
@@ -24,11 +24,13 @@
 
 <script>
 import Info from "../sections/Info.vue";
+import Experiences from "../sections/Experiences.vue";
 
 export default {
   name: "Main",
   components: {
     Info,
+    Experiences,
   },
 };
 </script>
