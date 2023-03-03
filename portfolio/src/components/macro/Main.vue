@@ -2,6 +2,7 @@
   <main class="main">
     <Info />
     <Experiences />
+    <Projects />
     <!-- <h2 class="progetti">Progetti</h2>
     <div class="progetti"></div> -->
     <!-- <ul>
@@ -25,12 +26,14 @@
 <script>
 import Info from "../sections/Info.vue";
 import Experiences from "../sections/Experiences.vue";
+import Projects from "../sections/Projects.vue";
 
 export default {
   name: "Main",
   components: {
     Info,
     Experiences,
+    Projects,
   },
 };
 </script>

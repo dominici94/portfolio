@@ -23,17 +23,17 @@
         <figure class="img-container">
           <img
             class="img-photo"
-            src="../../assets/img/img-profilo.jpg"
+            src="../../assets/img/profilo.jpg"
             alt="profile picture"
           />
         </figure>
       </div>
 
-      <h3 style="text-align: center">skills</h3>
+      <h3 style="text-align: center">Tecnologie apprese</h3>
       <carousel :items-to-show="5" :wrapAround="true" :autoplay="2500">
         <slide
           v-for="slide in dataSlider"
-          :key="slide"
+          :key="slide.id"
           style="display: flex; flex-direction: column"
         >
           <figure style="width: 10rem; height: 10rem">
@@ -60,39 +60,52 @@ export default {
     return {
       dataSlider: [
         {
+          id: 1,
           title: "Html 5",
           imgUrl: require("../../assets/img/html5.png"),
         },
         {
+          id: 2,
           title: "Css 3",
           imgUrl: require("../../assets/img/css.png"),
         },
         {
+          id: 3,
           title: "Javascript",
           imgUrl: require("../../assets/img/js.png"),
         },
-
         {
+          id: 4,
+          title: "Sass",
+          imgUrl: require("../../assets/img/sass.png"),
+        },
+        {
+          id: 5,
           title: "Jquery",
           imgUrl: require("../../assets/img/jquery.png"),
         },
         {
+          id: 6,
           title: "Vue.js",
           imgUrl: require("../../assets/img/vuejs.png"),
         },
         {
+          id: 7,
           title: "Bootstrap",
           imgUrl: require("../../assets/img/bootstrap.png"),
         },
         {
+          id: 8,
           title: "Git",
           imgUrl: require("../../assets/img/git.png"),
         },
         {
+          id: 9,
           title: "Php",
           imgUrl: require("../../assets/img/php.png"),
         },
         {
+          id: 10,
           title: "Laravel",
           imgUrl: require("../../assets/img/laravel.png"),
         },

@@ -8,7 +8,7 @@
   padding: 5rem;
   display: flex;
   align-items: center;
-  gap: 6rem;
+  gap: 10rem;
 }
 
 .about {
@@ -28,7 +28,7 @@
   }
 
   &__text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.6;
   }
 }
@@ -37,7 +37,7 @@
   flex: 1 0 20rem;
   height: 20rem;
   overflow: hidden;
-  border: 0.8rem solid $color-primary-light;
+  border: 0.5rem solid $color-primary-light;
   border-radius: 50%;
   box-shadow: $shadow-black;
 

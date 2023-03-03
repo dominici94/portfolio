@@ -1,5 +1,35 @@
 <template>
-  <section class="experiences">sezione esperienze</section>
+  <section class="experiences">
+    <h3>Le mie esperienze</h3>
+    <ul class="experiences__list">
+      <li class="experiences__card">
+        <h3>Ventis</h3>
+        <h4>Front end developer</h4>
+        <p>
+          Ho svolto sei mesi in Ventis, un e-commerce internazionale in cui ho
+          avuto modo di apprendere i metodi principali di lavoro, come
+          assegnazione dei task tramite jira, collaborazione con i team di
+          back-end e grafica e utilizzo di Git flow per lavorare sui branch di
+          sviluppo, test e produzione. Ho lavorato sul miglioramento dei web
+          vitals per ottimizzare le performance. Inoltre ho svolto revisione e
+          implementazione di codice per lo sviluppo lato front-end dei siti
+          aziendali.
+        </p>
+      </li>
+
+      <li class="experiences__card">
+        <h3>Boolean Career's</h3>
+        <h4>Bootcamp full stack developer</h4>
+        <p>
+          Corso intensivo full-time di sei mesi per la formazione della figura
+          di sviluppatore full stack consistente di oltre 700 ore di corso,
+          strutturato in spiegazione della teoria in mattinata e applicazione
+          degli argomenti appresi in esercitazioni pomeridiane. Ho appreso le
+          basi principali per il lavoro di sviluppatore web.
+        </p>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script>
