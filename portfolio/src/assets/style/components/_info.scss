@@ -3,22 +3,14 @@
   display: flex;
   align-items: center;
   gap: 15rem;
+  margin-bottom: 3rem;
 
   &__title {
-    background-image: linear-gradient(
-      to right,
-      $color-primary-darker,
-      $color-primary-lighter
-    );
-    background-clip: text;
-    color: transparent;
-    font-size: 3.2rem;
-    letter-spacing: 2px;
     margin-bottom: 3rem;
   }
 
   &__text {
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     line-height: 1.6;
   }
 
@@ -35,5 +27,19 @@
 
   &__image-picture {
     width: 100%;
+    -webkit-user-drag: none;
+    // user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+.skills {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 3rem;
   }
 }

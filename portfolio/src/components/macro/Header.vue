@@ -4,7 +4,7 @@
       ><img src="../../assets/img/logo.png" alt="logo" class="header__logo"
     /></a>
 
-    <div class="header__heading">
+    <div class="header__heading heading">
       <h1 class="header__heading--main">Mattia Dominici</h1>
       <h2 class="header__heading--sub">front-end developer</h2>
     </div>
