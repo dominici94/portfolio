@@ -11,11 +11,11 @@
     // width: 80%;
     // margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 33.333333%);
+    grid-template-columns: repeat(3, calc(33.333333%));
     // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 30rem;
-    row-gap: 4.5rem;
-    column-gap: 4.5rem;
+    // row-gap: 4.5rem;
+    // column-gap: 4.5rem;
   }
 
   &__card {
@@ -30,7 +30,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: left;
+      // object-position: left;
     }
 
     &__side {
@@ -42,7 +42,7 @@
       width: 100%;
       // -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      border-radius: 3px;
+      border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
       &--front {
