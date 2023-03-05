@@ -43,7 +43,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 1.5rem;
+
     transition: all 0.3s;
 
     &:hover,
@@ -55,6 +55,7 @@
 
   &__nav--link:link,
   &__nav--link:visited {
+    padding: 0 1.5rem;
     line-height: $header-height;
     text-decoration: none;
     color: currentColor;

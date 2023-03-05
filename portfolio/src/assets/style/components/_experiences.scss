@@ -1,0 +1,57 @@
+.experiences {
+  background-color: $color-grey-light-1;
+  padding: 6rem 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 6rem;
+  }
+
+  &__list {
+    list-style: none;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    row-gap: 4rem;
+    // flex-wrap: wrap;
+  }
+
+  &__card {
+    color: $color-white;
+    border: 1px solid $color-primary;
+    background-image: linear-gradient(
+      to bottom,
+      $color-primary-darker,
+      $color-primary
+    );
+    padding: 3rem;
+    box-shadow: $shadow-black;
+
+    &:nth-child(odd) {
+      grid-column: 1 / 3;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    &:nth-child(even) {
+      grid-column: 2 / 4;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+  }
+
+  &__society {
+    color: $color-grey-light-2;
+    font-size: 2rem;
+    // margin-bottom: 1rem;
+  }
+
+  &__role {
+    font-size: $default-font-size;
+    margin-bottom: 1.5rem;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+  }
+}

@@ -1,3 +1,8 @@
+.info {
+  margin-bottom: 6rem;
+  // height: calc(100vh - $header-height);
+}
+
 .about {
   padding: 5rem 0;
   display: flex;
@@ -40,6 +45,27 @@
   text-align: center;
 
   &__title {
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-container {
+    width: 10rem;
+    height: 15rem;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__titte {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-grey-dark-3;
   }
 }

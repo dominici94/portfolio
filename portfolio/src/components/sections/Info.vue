@@ -37,12 +37,16 @@
           <slide
             v-for="slide in dataSlider"
             :key="slide.id"
-            style="display: flex; flex-direction: column"
+            class="skills__slide"
           >
-            <figure style="width: 10rem; height: 10rem">
-              <img :src="slide.imgUrl" :alt="slide.title" style="width: 100%" />
+            <figure class="skills__img-container">
+              <img
+                class="skills__image"
+                :src="slide.imgUrl"
+                :alt="slide.title"
+              />
+              <figcaption class="skills__titte">{{ slide.title }}</figcaption>
             </figure>
-            <h3>{{ slide.title }}</h3>
           </slide>
         </carousel>
       </div>
