@@ -7,15 +7,28 @@
         <li
           v-for="project in dataProjects"
           :key="project.title"
-          class="projects__item"
+          class="projects__card"
         >
-          <a
+          <div class="projects__card__side projects__card__side--front">
+            <div class="projects__card__side--overlay"></div>
+            <img
+              :src="`${project.imgUrl}`"
+              alt="preview image project"
+              class="projects__card__preview"
+            />
+          </div>
+          <div class="projects__card__side projects__card__side--back">
+            <a class="projects__link" :href="`${project.link}`"
+              >visita il progetto</a
+            >
+          </div>
+        </li>
+        <!-- <a
             class="projects__link"
             href="https://boolflix-dominici.netlify.app"
           >
             <img :src="`${project.imgUrl}`" alt="preview image project" />
-          </a>
-        </li>
+          </a> -->
         <!-- <li class="projects__item">
           <a href="https://course-omnifood.netlify.app">Omnifood</a>
         </li>
@@ -53,14 +66,16 @@ export default {
       dataProjects: [
         {
           title: "Boolflix",
+          link: "https://boolflix-dominici.netlify.app",
           desc: "Replica di Netflix, con funzionalità di ricerca di un film o serie tv tramite l'API di The Movie DB",
           imgUrl: require("../../assets/img/preview_boolflix.png"),
           reponsive: false,
         },
         {
-          title: "Boolflix",
+          title: "Omnifood",
+          link: "https://boolflix-dominici.netlify.app",
           desc: "Replica di Netflix, con funzionalità di ricerca di un film o serie tv tramite l'API di The Movie DB",
-          imgUrl: require("../../assets/img/preview_boolflix.png"),
+          imgUrl: require("../../assets/img/preview_omnifood.png"),
           reponsive: false,
         },
         {

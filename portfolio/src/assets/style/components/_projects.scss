@@ -13,13 +13,74 @@
     display: grid;
     grid-template-columns: repeat(3, 33.333333%);
     // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 250px;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    grid-auto-rows: 30rem;
+    row-gap: 4.5rem;
+    column-gap: 4.5rem;
   }
 
-  &__item {
+  &__card {
+    perspective: 150rem;
+    // -moz-perspective: 150rem;
+    position: relative;
     // background-color: orangered;
+    // height: 40rem;
     // background-image: url("../../img/preview_boolflix.png");
+
+    &__preview {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+
+    &__side {
+      height: 30rem;
+      transition: all 0.8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      // -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+      &--front {
+        position: relative;
+        // background-color: $color-white;
+
+        // z-index: 100;
+      }
+
+      &--overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          to bottom,
+          rgba($color-primary-lighter, 0.7),
+          rgba($color-primary-darker, 0.8)
+        );
+      }
+
+      &--back {
+        transform: rotateY(180deg);
+        background-image: linear-gradient(
+          to bottom,
+          $color-primary,
+          $color-primary-darker
+        );
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+      transform: rotateY(0);
+    }
   }
 }
