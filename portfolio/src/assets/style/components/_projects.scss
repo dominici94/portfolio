@@ -8,29 +8,60 @@
 
   &__container {
     list-style: none;
-    // width: 80%;
-    // margin: 0 auto;
+
     display: grid;
-    grid-template-columns: repeat(3, calc(33.333333%));
-    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 30rem;
-    // row-gap: 4.5rem;
-    // column-gap: 4.5rem;
+    row-gap: 4.5rem;
+    column-gap: 4.5rem;
   }
 
   &__card {
     perspective: 150rem;
     // -moz-perspective: 150rem;
     position: relative;
-    // background-color: orangered;
-    // height: 40rem;
-    // background-image: url("../../img/preview_boolflix.png");
+    color: $color-white;
 
     &__preview {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      // object-position: left;
+    }
+
+    &__title {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      font-size: 1.4rem;
+      line-height: 1.2;
+    }
+
+    &__responsivness {
+      font-size: 1.4rem;
+    }
+
+    .icon {
+      vertical-align: text-top;
+      margin-left: 0.5rem;
+
+      border-radius: 50%;
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: $color-grey-dark-3;
+    }
+    &__cta {
+      margin-top: 3rem;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.4rem;
+      background-color: $color-white;
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-primary-darker;
     }
 
     &__side {
@@ -42,14 +73,12 @@
       width: 100%;
       // -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      border-radius: 10px;
+      border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
       &--front {
         position: relative;
-        // background-color: $color-white;
-
-        // z-index: 100;
       }
 
       &--overlay {
@@ -60,8 +89,8 @@
         height: 100%;
         background-image: linear-gradient(
           to bottom,
-          rgba($color-primary-lighter, 0.7),
-          rgba($color-primary-darker, 0.8)
+          rgba($color-primary-lighter, 0.5),
+          rgba($color-primary-darker, 0.95)
         );
       }
 
@@ -72,6 +101,11 @@
           $color-primary,
           $color-primary-darker
         );
+        padding: 2rem;
+      }
+
+      & > *:not(:last-child) {
+        margin-bottom: 1rem;
       }
     }
 
