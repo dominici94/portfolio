@@ -58,7 +58,7 @@ export default {
         {
           title: "Boolflix",
           link: "https://boolflix-dominici.netlify.app",
-          desc: "Progetto svolto durante il corso di Boolean, consiste in una replica di Netflix, con funzionalità di ricerca di un film o serie tv tramite l'API di The Movie DB. Per lo sviluppo è stato adottato Vue.js come framework.",
+          desc: "Progetto svolto durante il corso di Boolean, consistente in una replica di Netflix, con funzionalità di ricerca di un film o serie tv tramite l'API di The Movie DB. Per lo sviluppo è stato adottato Vue.js come framework.",
           imgUrl: require("../../assets/img/preview_boolflix.png"),
           reponsive: false,
         },
@@ -93,7 +93,7 @@ export default {
         {
           title: "Pig game",
           link: "https://js-course-piggame.netlify.app",
-          desc: "Progetto svolto seguendo il corso su Udemy di Jonas Schmedtmann sull'utilizzo di JavaScript. Il progetto è un semplice gioco nel quale un giocatore tira i dadi, se esce 1 tocca al giocatore avversario, se escono altri numeri, questi si possono accumulare all'attuale punteggio. Lo scopo finale è arrivare a 99 punti per primi",
+          desc: "Progetto svolto seguendo il corso su Udemy di Jonas Schmedtmann sull'utilizzo di JavaScript. Il progetto è un semplice gioco nel quale un giocatore tira i dadi, se esce 1 tocca al giocatore avversario, se escono altri numeri, questi si possono sommare all'attuale punteggio. Lo scopo finale è arrivare a 99 punti per primi",
           imgUrl: require("../../assets/img/preview_piggame.png"),
           reponsive: false,
         },
@@ -107,14 +107,14 @@ export default {
         {
           title: "Mapty",
           link: "https://js-course-mapty.netlify.app",
-          desc: "Progetto svolto seguendo il corso su Udemy di Jonas Schmedtmann sull'utilizzo di JavaScript. Il progetto è incentrato sull'utilizzo della geolocation API per rintracciare la posizione del client e utilizzarla per registrare attività di corsa o ciclismo.",
+          desc: "Progetto svolto seguendo il corso su Udemy di Jonas Schmedtmann sull'utilizzo di JavaScript. Il progetto è incentrato sull'utilizzo della geolocation API per rintracciare la posizione dell'utente e utilizzarla per registrare attività di corsa o ciclismo.",
           imgUrl: require("../../assets/img/preview_mapty.png"),
           reponsive: false,
         },
         {
           title: "Forkify",
           link: "https://js-course-forkify.netlify.app",
-          desc: "Progetto svolto seguendo il corso su Udemy di Jonas Schmedtmann sull'utilizzo di JavaScript. In questo progetto si può cercare ricette in base agli ingredienti, visualizzare le singole ricette e visualizzare la qunaittà di ingredienti in base alle porzioni richieste.",
+          desc: "Progetto svolto seguendo il corso su Udemy di Jonas Schmedtmann sull'utilizzo di JavaScript. In questo progetto è possibile cercare ricette in base agli ingredienti, visualizzare le singole ricette e visualizzare la quantità di ingredienti in base alle porzioni richieste.",
           imgUrl: require("../../assets/img/preview_forkify.png"),
           reponsive: false,
         },

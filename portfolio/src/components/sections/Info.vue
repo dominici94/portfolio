@@ -6,17 +6,17 @@
           <h3 class="about__title heading heading-primary">Informazioni</h3>
           <p class="about__text">
             Sono un junior front-end developer con passione per la creazione di
-            prodotti digitali coinvolgenti e intuitivi. Sono a conoscenza delle
-            tecnologie web di base: HTML, CSS, JavaScript e framework come
+            prodotti digitali coinvolgenti ed intuitivi. Ho un'ottima conoscenza
+            delle tecnologie web di base: HTML, CSS, JavaScript e framework come
             Vuejs. Ho anche una buona comprensione dei principi di design, che
             utilizzo per creare interfacce utente efficaci e gradevoli. Ho
-            esperienza nella creazione di siti web responsive e ottimizzati per
+            esperienza nella creazione di siti web responsive ed ottimizzati per
             dispositivi mobili, nonché nella gestione di progetti in
             collaborazione con altri membri del team, come designer e
-            sviluppatori back end. Sono sempre alla ricerca di nuove sfide e di
-            migliorare le mie competenze, partecipando a conferenze e corsi di
-            formazione. Sono in grado di lavorare bene sotto pressione e di
-            rispettare le scadenze.
+            sviluppatori back end. Sono sempre alla ricerca di nuove sfide e mi
+            impegno costantemente nel migliorare le mie competenze, partecipando
+            a conferenze e corsi di formazione. Sono in grado di lavorare bene
+            anche sotto pressione e di rispettare le scadenze.
           </p>
         </div>
         <figure class="about__image-container">
