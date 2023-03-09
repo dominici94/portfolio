@@ -33,7 +33,7 @@
           Tecnologie apprese
         </h3>
 
-        <carousel :items-to-show="5" :wrapAround="true" :autoplay="2500">
+        <carousel :settings="settings">
           <slide
             v-for="slide in dataSlider"
             :key="slide.id"
@@ -118,6 +118,11 @@ export default {
           imgUrl: require("../../assets/img/laravel.png"),
         },
       ],
+      settings: {
+        itemsToShow: 5,
+        wrapAround: true,
+        autoplay: 1000,
+      },
     };
   },
 };
