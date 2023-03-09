@@ -23,6 +23,27 @@
         <a class="header__nav--link" href="#">Contatti</a>
       </li>
     </ul>
+
+    <input type="checkbox" class="mobile__checkbox hidden" id="navi-toggle" />
+
+    <label for="navi-toggle" class="mobile__button hidden">
+      <span class="mobile__icon">&nbsp;</span>
+    </label>
+
+    <ul class="mobile__nav">
+      <li class="mobile__nav--item">
+        <a class="mobile__nav--link" href="#">Informazioni</a>
+      </li>
+      <li class="mobile__nav--item">
+        <a class="mobile__nav--link" href="#">Esperienze</a>
+      </li>
+      <li class="mobile__nav--item">
+        <a class="mobile__nav--link" href="#">Progetti</a>
+      </li>
+      <li class="mobile__nav--item">
+        <a class="mobile__nav--link" href="#">Contatti</a>
+      </li>
+    </ul>
   </header>
 </template>
 
