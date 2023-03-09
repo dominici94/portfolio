@@ -26,7 +26,7 @@
 
     <input type="checkbox" class="mobile__checkbox hidden" id="navi-toggle" />
 
-    <label for="navi-toggle" class="mobile__button hidden">
+    <label for="navi-toggle" class="mobile__button">
       <span class="mobile__icon">&nbsp;</span>
     </label>
 
