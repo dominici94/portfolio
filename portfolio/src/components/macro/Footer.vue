@@ -1,5 +1,5 @@
 <template>
-  <div id="section--contacts" class="footer">
+  <footer id="section--contacts" class="footer">
     <div class="container">
       <h3 class="heading heading-primary footer__heading">Contatti</h3>
       <div class="contacts">
@@ -35,7 +35,7 @@
         <div class="contacts__copy">&copy; Mattia Dominici - 2023</div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
