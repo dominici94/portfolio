@@ -1,5 +1,5 @@
 <template>
-  <section class="experiences">
+  <section id="section--experiences" class="experiences">
     <div class="container">
       <h3 class="experiences__title heading heading-primary">
         Le mie esperienze

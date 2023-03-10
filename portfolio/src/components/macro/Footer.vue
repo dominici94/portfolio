@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div id="section--contacts" class="footer">
     <div class="container">
       <h3 class="heading heading-primary footer__heading">Contatti</h3>
       <div class="contacts">

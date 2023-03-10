@@ -11,16 +11,16 @@
 
     <ul class="header__nav">
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">Informazioni</a>
+        <a class="header__nav--link" href="#section--info">Informazioni</a>
       </li>
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">Esperienze</a>
+        <a class="header__nav--link" href="#section--experiences">Esperienze</a>
       </li>
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">Progetti</a>
+        <a class="header__nav--link" href="#section--projects">Progetti</a>
       </li>
       <li class="header__nav--item">
-        <a class="header__nav--link" href="#">Contatti</a>
+        <a class="header__nav--link" href="#section--contacts">Contatti</a>
       </li>
     </ul>
 
@@ -32,16 +32,16 @@
 
     <ul class="mobile__nav">
       <li class="mobile__nav--item">
-        <a class="mobile__nav--link" href="#">Informazioni</a>
+        <a class="mobile__nav--link" href="#section--info">Informazioni</a>
       </li>
       <li class="mobile__nav--item">
-        <a class="mobile__nav--link" href="#">Esperienze</a>
+        <a class="mobile__nav--link" href="#section--experiences">Esperienze</a>
       </li>
       <li class="mobile__nav--item">
-        <a class="mobile__nav--link" href="#">Progetti</a>
+        <a class="mobile__nav--link" href="#section--projects">Progetti</a>
       </li>
       <li class="mobile__nav--item">
-        <a class="mobile__nav--link" href="#">Contatti</a>
+        <a class="mobile__nav--link" href="#section--contacts">Contatti</a>
       </li>
     </ul>
   </header>
@@ -50,5 +50,31 @@
 <script>
 export default {
   name: "Header",
+  mounted() {
+    document
+      .querySelector(".header__nav")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+
+        if (e.target.classList.contains("header__nav--link")) {
+          const id = e.target.getAttribute("href");
+          document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+        }
+      });
+
+    const toggleNavigation = document.getElementById("navi-toggle");
+
+    document
+      .querySelector(".mobile__nav")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+
+        if (e.target.classList.contains("mobile__nav--link")) {
+          const id = e.target.getAttribute("href");
+          document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+          toggleNavigation.checked = !toggleNavigation.checked;
+        }
+      });
+  },
 };
 </script>
