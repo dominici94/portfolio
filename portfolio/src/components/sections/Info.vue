@@ -119,9 +119,16 @@ export default {
         },
       ],
       settings: {
-        itemsToShow: 5,
+        itemsToShow: 4,
+        snapAlign: "start",
         wrapAround: true,
         autoplay: 1000,
+        breakpoints: {
+          600: {
+            itemsToShow: 5,
+            // snapAlign: "start",
+          },
+        },
       },
     };
   },

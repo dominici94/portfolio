@@ -1,9 +1,7 @@
 <template>
   <section id="section--experiences" class="experiences">
     <div class="container">
-      <h3 class="experiences__title heading heading-primary">
-        Le mie esperienze
-      </h3>
+      <h3 class="experiences__title heading heading-primary">Esperienze</h3>
       <ul class="experiences__list">
         <li class="experiences__card">
           <h3 class="experiences__society">Ventis</h3>
