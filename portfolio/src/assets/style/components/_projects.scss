@@ -19,6 +19,10 @@
     grid-auto-rows: 30rem;
     row-gap: 4.5rem;
     column-gap: 4.5rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
 
   &__card {
