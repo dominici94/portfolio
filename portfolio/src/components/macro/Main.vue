@@ -23,9 +23,9 @@ export default {
 
     const revealExperience = function (entries, observer) {
       const [entry] = entries;
-      console.log([entry]);
 
       if (!entry.isIntersecting) return;
+      console.log(entry);
       entry.target.classList.add("active");
       observer.unobserve(entry.target);
     };
@@ -33,6 +33,7 @@ export default {
     const revealObserver = new IntersectionObserver(revealExperience, {
       root: null,
       threshold: 0,
+      rootMargin: "25%",
     });
 
     allReveals.forEach(function (card) {
