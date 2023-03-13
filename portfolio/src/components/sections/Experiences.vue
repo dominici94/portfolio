@@ -3,7 +3,7 @@
     <div class="container">
       <h3 class="experiences__title heading heading-primary">Esperienze</h3>
       <ul class="experiences__list">
-        <li class="experiences__card">
+        <li class="experiences__card reveal fade-left">
           <h3 class="experiences__society">Ventis</h3>
           <h4 class="experiences__role">Front end developer</h4>
           <p class="experiences__desc">
@@ -18,7 +18,7 @@
           </p>
         </li>
 
-        <li class="experiences__card">
+        <li class="experiences__card reveal fade-right">
           <h3 class="experiences__society">Boolean Career's</h3>
           <h4 class="experiences__role">Bootcamp full stack developer</h4>
           <p class="experiences__desc">

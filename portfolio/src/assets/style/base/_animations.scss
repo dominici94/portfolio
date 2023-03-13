@@ -41,3 +41,31 @@
     transform: translateY(0);
   }
 }
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.active.fade-left {
+  animation: fade-left 0.6s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 0.6s ease-in;
+}

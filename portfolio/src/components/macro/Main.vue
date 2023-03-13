@@ -18,7 +18,26 @@ export default {
     Experiences,
     Projects,
   },
+  mounted() {
+    const allReveals = document.querySelectorAll(".reveal");
+
+    const revealExperience = function (entries, observer) {
+      const [entry] = entries;
+      console.log([entry]);
+
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("active");
+      observer.unobserve(entry.target);
+    };
+
+    const revealObserver = new IntersectionObserver(revealExperience, {
+      root: null,
+      threshold: 0,
+    });
+
+    allReveals.forEach(function (card) {
+      revealObserver.observe(card);
+    });
+  },
 };
 </script>
-
-<style></style>
