@@ -2,6 +2,16 @@
   <footer id="section--contacts" class="footer">
     <div class="container">
       <h3 class="heading heading-primary footer__heading">Contatti</h3>
+
+      <div>
+        <input v-model="emailData.name" type="text" required />
+        <input v-model="emailData.email" type="email" required />
+        <input v-model="emailData.bodyText" type="text" required />
+        <button @click="SendEmail()">Send Email</button>
+
+        {{ emailData }}
+      </div>
+
       <div class="contacts">
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -39,7 +49,35 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "Footer",
+  data() {
+    return {
+      emailData: {
+        name: "",
+        email: "",
+        bodyText: "",
+      },
+    };
+  },
+  methods: {
+    SendEmail() {
+      axios
+        .post(
+          "https://khu61npt41.execute-api.us-east-2.amazonaws.com/prod/sendemail",
+          this.emailData
+        )
+        .then((response) => {
+          console.log(response);
+          alert("Email Inviata");
+        })
+        .catch((err) => {
+          console.log(err);
+          alert("Errore email non inviata!");
+        });
+    },
+  },
 };
 </script>
