@@ -25,7 +25,7 @@ export default {
       const [entry] = entries;
 
       if (!entry.isIntersecting) return;
-      console.log(entry);
+      // console.log(entry);
       entry.target.classList.add("active");
       observer.unobserve(entry.target);
     };

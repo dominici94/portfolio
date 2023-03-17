@@ -18,6 +18,9 @@ export default {
     Main,
     Footer,
   },
+  created() {
+    document.title = "Mattia Dominici | Front-end Developer";
+  },
 };
 </script>
 

@@ -11,13 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Roboto+Slab:wght@300;400;600;700&display=swap"
       rel="preload"
     />
-    <title>Mattia Dominici | Front-end developer</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
       <strong
-        >We're sorry but Mattia Dominici's website doesn't work properly without
-        JavaScript enabled. Please enable it to continue.</strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
       >
     </noscript>
     <div id="app"></div>
