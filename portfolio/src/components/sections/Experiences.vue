@@ -7,14 +7,14 @@
           <h3 class="experiences__society">Ventis</h3>
           <h4 class="experiences__role">Front end developer</h4>
           <p class="experiences__desc">
-            Ho svolto per sei mesi in Ventis, un e-commerce internazionale,
-            grazie al quale ho avuto modo di apprendere i metodi principali di
-            lavoro, come assegnazione dei task tramite jira, collaborazione con
-            i team di back-end e grafica ed utilizzo di Git flow per lavorare
-            sui branch di sviluppo, test e produzione. Ho lavorato sul
-            miglioramento dei web vitals per ottimizzare le performance.
-            Inoltre, ho svolto revisione e implementazione di codice per lo
-            sviluppo lato front-end dei siti aziendali.
+            Ho lavorato sei mesi in Ventis, un e-commerce internazionale, grazie
+            al quale ho avuto modo di apprendere i metodi principali di lavoro,
+            come assegnazione dei task tramite jira, collaborazione con i team
+            di back-end e grafica ed utilizzo di Git flow per lavorare sui
+            branch di sviluppo, test e produzione. Ho lavorato sul miglioramento
+            dei web vitals per ottimizzare le performance. Inoltre, ho svolto
+            revisione e implementazione di codice per lo sviluppo lato front-end
+            dei siti aziendali.
           </p>
         </li>
 
